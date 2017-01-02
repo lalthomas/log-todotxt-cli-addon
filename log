@@ -7,6 +7,10 @@
 TODOTXT_VERBOSE=0
 TODOTXT_PLAIN=0
 
+if [[ -z $LOG_FILE ]]; then
+    LOG_FILE=log.txt
+fi
+
 function usage() {
     echo "  $(basename $0) [OPTION] "    
 	echo "    OPTION"
